@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22053"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:21:28 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTA0OzA5OjUxOjE3IEFNOzMzMTg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTA0OzExOjIxOjI4IEFNOzQ7MzQyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="X=-b+sqrt b^2-4*a*c/2*a"/>
+            <output expression="&quot;Swapping the two numbers without using third variable&quot;" newline="True"/>
+            <comment text="Declaration"/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <comment text="Input"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <comment text="Calculation"/>
+            <assign variable="A" expression="A+B"/>
+            <assign variable="B" expression="A-B"/>
+            <assign variable="A" expression="A-B"/>
+            <output expression="&quot;After Swapping&quot;" newline="True"/>
+            <output expression="A" newline="True"/>
+            <output expression="B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

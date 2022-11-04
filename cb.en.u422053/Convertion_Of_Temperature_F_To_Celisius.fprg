@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22053"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:49:40 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTA0OzA5OjA4OjA3IEFNOzMzMTk="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTA0OzEwOjQ5OjQwIEFNOzU7MzQyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Convert temp. from F to C&#13;&#10;F=9/5*c+32"/>
+            <comment text="declaration"/>
+            <declare name="GivenTemperature" type="Integer" array="False" size=""/>
+            <declare name="ConvertedTemperature" type="Integer" array="False" size=""/>
+            <comment text="Input From User"/>
+            <output expression="&quot;Enter the temperature in F&quot;" newline="True"/>
+            <input variable="GivenTemperature"/>
+            <comment text="calculation"/>
+            <assign variable="ConvertedTemperature" expression="9/5*GivenTemperature+32"/>
+            <comment text="Output"/>
+            <output expression="&quot;TheTemperatureInF&quot;" newline="True"/>
+            <output expression="ConvertedTemperature" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

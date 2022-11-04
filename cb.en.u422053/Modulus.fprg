@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22053"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:21:02 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTA0OzEwOjM4OjM0IEFNOzMzMTQ="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTA0OzExOjIxOjAyIEFNOzU7MzQxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text=""/>
+            <declare name="divisor, divident, quotient, reminder" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of divident&quot;" newline="True"/>
+            <input variable="divident"/>
+            <output expression="&quot;enter the value of divisor&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <assign variable="quotient" expression="divident/divisor"/>
+            <assign variable="reminder" expression="divident-(divisor*quotient)"/>
+            <output expression="&quot;for the given divident and divisor the reminder&quot; &amp; reminder" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
