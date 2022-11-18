@@ -1,0 +1,28 @@
+Algorithm For ATM Transaction
+
+1.Start
+2.Output "Insert Your ATM Card"
+3.Declare Integer SecuredPin
+4.Output "Enter Your Secured Pin"
+5.Input SecuredPin
+6.Declare Integer AccountNumber
+7.Output "Enter Your Account Number"
+8.Input AccountNumber
+9.Declare Integer WithdrawingAmount
+10.Output "Enter Your Withdrawing Amount"
+11.Input WithdrawingAmount
+12.If WithdrawingAmount>=500
+   12.1 Output "SORRY! Not having sufficient account balance"
+   12.2 Output "Thanks For Banking With Us"
+13.Else
+   13.1 Declare Integer SecuredPin2
+   13.2 Output "Enter Your Secured Pin2"
+   13.3 Input SecuredPin2
+14.If SecuredPin==SecuredPin2
+15.Output "Please Wait..!Your Amount is Being Processing"
+   15.1Output "Collect Your Amount"
+16.Else
+17.Output "Your Transaction Is Cancelled, Due to Wrong Secure Pin"
+18.Output "Visit the Near Bank, If any queries.! "
+19.Output "Thanks For Banking With Us"
+20.End

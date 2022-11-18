@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22053"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:10:17 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTE4OzA5OjAyOjU4IEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTE4OzEwOjU3OjE3IEFNOzI7Q0IuRU4uVTRDWVMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTE4OzA5OjAyOjU4IEFNO0FUTSBBc3NpZ25tZW50IDEuZnByZzs4MjI1"/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTExLTE4OzExOjEwOjE3IEFNOzg7MzE3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Variable Declaration"/>
+            <declare name="AccountNumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Your Account Number&quot;" newline="True"/>
+            <input variable="AccountNumber"/>
+            <declare name="SecuredPin" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Your Secured Pin&quot;" newline="True"/>
+            <input variable="SecuredPin"/>
+            <declare name="Balance" type="Integer" array="False" size=""/>
+            <assign variable="Balance" expression="1000"/>
+            <declare name="OptionNumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the Option Number&quot;" newline="True"/>
+            <output expression="&quot;1.Withdraw Amount&quot;" newline="True"/>
+            <output expression="&quot;2.Deposit Amount&quot;" newline="True"/>
+            <output expression="&quot;3.Balance&quot;" newline="True"/>
+            <output expression="&quot;4.Change PIN&quot;" newline="True"/>
+            <input variable="OptionNumber"/>
+            <if expression="OptionNumber==1">
+                <then>
+                    <declare name="WithdrawingAmount" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter Your Withdrawing Amount&quot;" newline="True"/>
+                    <input variable="WithdrawingAmount"/>
+                    <comment text="Checking The Minimum Balance"/>
+                    <if expression="Balance-WithdrawingAmount&lt;500">
+                        <then>
+                            <declare name="Answer" type="String" array="False" size=""/>
+                            <output expression="&quot;Your withdrawing amount will affect your minimum balance.&quot;" newline="True"/>
+                            <output expression="&quot;Are you sure to withdraw the entered amount?&quot;" newline="True"/>
+                            <input variable="Answer"/>
+                            <if expression="Answer ==&quot;Yes&quot;">
+                                <then>
+                                    <declare name="SecuredPin2" type="Integer" array="False" size=""/>
+                                    <output expression="&quot;Enter Your Secured Pin2&quot;" newline="True"/>
+                                    <input variable="SecuredPin2"/>
+                                    <if expression="SecuredPin==SecuredPin2">
+                                        <then>
+                                            <output expression="&quot;Please Wait..!Your Amount is Being Processing&quot;" newline="True"/>
+                                            <output expression="&quot;Collect Your Amount&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Your Transaction Is Cancelled, Due to Wrong Secure Pin&quot;" newline="True"/>
+                                            <output expression="&quot;Visit the Near Bank, If any queries.! &quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <comment text="Security Checks"/>
+                            <declare name="SecuredPin2" type="Integer" array="False" size=""/>
+                            <output expression="&quot;Enter Your Secured Pin2&quot;" newline="True"/>
+                            <input variable="SecuredPin2"/>
+                            <comment text="Verifying The Secured Pin"/>
+                            <if expression="SecuredPin==SecuredPin2">
+                                <then>
+                                    <output expression="&quot;Please Wait..!Your Amount is Being Processing&quot;" newline="True"/>
+                                    <output expression="&quot;Collect Your Amount&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Your Transaction Is Cancelled, Due to Wrong Secure Pin&quot;" newline="True"/>
+                                    <output expression="&quot;Visit the Near Bank, If any queries.! &quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="OptionNumber==2">
+                        <then>
+                            <declare name="DepositAmount" type="Integer" array="False" size=""/>
+                            <output expression="&quot;Enter your deposit amount&quot;" newline="True"/>
+                            <input variable="DepositAmount"/>
+                            <assign variable="Balance" expression="Balance+DepositAmount"/>
+                            <output expression="&quot;Your Deposited Amount Is Updated In Your Account&quot;" newline="True"/>
+                            <output expression="Balance" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="OptionNumber==3">
+                                <then>
+                                    <output expression="&quot;Current Balance&quot;" newline="True"/>
+                                    <output expression="Balance" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="OptionNumber==4">
+                                        <then>
+                                            <declare name="TempPIN" type="Integer" array="False" size=""/>
+                                            <output expression="&quot;Enter Current PIN&quot;" newline="True"/>
+                                            <input variable="TempPIN"/>
+                                            <if expression="SecuredPin==TempPIN">
+                                                <then>
+                                                    <output expression="&quot;Enter the New PIN&quot;" newline="True"/>
+                                                    <input variable="SecuredPIN"/>
+                                                    <output expression="&quot;Re-Enter the new PIN&quot;" newline="True"/>
+                                                    <input variable="TempPIN"/>
+                                                    <if expression="SecurePin==TempPIN">
+                                                        <then>
+                                                            <output expression="&quot;PIN has been Updated &quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;PIN is not updated&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Wrong PIN&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Thanks For Banking With Us&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
