@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22053"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:04:11 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTEyLTAyOzA5OjI5OjA1IEFNOzMzMTk="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTEyLTAyOzEwOjA0OjExIEFNOzc7MzQxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="Limit" type="Integer" array="False" size=""/>
+            <assign variable="Number" expression="1"/>
+            <assign variable="Limit" expression="10"/>
+            <output expression="&quot;Multiplication Table&quot;" newline="True"/>
+            <while expression="Number&lt;=Limit">
+                <declare name="Counter" type="Integer" array="False" size=""/>
+                <assign variable="Counter" expression="1"/>
+                <output expression="&quot;The Multiplication table for&quot;" newline="False"/>
+                <output expression="Number" newline="True"/>
+                <while expression="Counter&lt;=Limit">
+                    <output expression="Number" newline="False"/>
+                    <output expression="&quot;*&quot;" newline="False"/>
+                    <output expression="Counter" newline="False"/>
+                    <output expression="&quot;=&quot;" newline="False"/>
+                    <output expression="Number*counter" newline="True"/>
+                    <assign variable="Counter" expression="Counter+1"/>
+                </while>
+                <output expression="&quot;     &quot;" newline="True"/>
+                <assign variable="Number" expression="Number+1"/>
+            </while>
+            <output expression="&quot;End Of Table&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

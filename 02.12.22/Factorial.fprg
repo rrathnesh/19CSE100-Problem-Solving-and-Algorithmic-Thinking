@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22053"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:28:51 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTEyLTAyOzA5OjIyOjI4IEFNOzMzMTc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MzsyMDIyMjNNQVlDMDA5MDsyMDIyLTEyLTAyOzA5OjI4OjUxIEFNOzI7MzQyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="Factorial" type="Integer" array="False" size=""/>
+            <assign variable="Factorial" expression="1"/>
+            <output expression="&quot;Sum of n numbers&quot;" newline="True"/>
+            <output expression="&quot;Enter the n number untill the sum is identified&quot;" newline="True"/>
+            <input variable="N"/>
+            <while expression="N&gt;=1">
+                <assign variable="Factorial" expression="Factorial*N"/>
+                <assign variable="N" expression="N-1"/>
+            </while>
+            <output expression="&quot;Factorial=&quot;" newline="False"/>
+            <output expression="Factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
