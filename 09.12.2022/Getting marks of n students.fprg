@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:00:58 AM"/>
+        <attribute name="created" value="SFA7REVTS1RPUC1MM1JERUtGOzIwMjItMTItMDk7MDk6Mzk6MDIgQU07MjQ5Ng=="/>
+        <attribute name="edited" value="SFA7REVTS1RPUC1MM1JERUtGOzIwMjItMTItMDk7MTA6MDY6NTYgQU07NDsyNjAy"/>
+        <attribute name="edited" value="cmF0aG47UkRFTEw7MjAyMi0xMi0wOTsxMTowMDo1OCBBTTs2OzIyODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of students&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="sub1, sub2, sub3, sub4, sub5, roll, total, avg" type="Integer" array="True" size="n"/>
+            <declare name="x, input" type="Integer" array="False" size=""/>
+            <for variable="x" start="0" end="n-1" direction="inc" step="1">
+                <comment text="Collecting data and information from the user"/>
+                <output expression="&quot;Enter roll number of student &quot;&amp;x+1" newline="True"/>
+                <input variable="input"/>
+                <assign variable="roll[x]" expression="input"/>
+                <output expression="&quot;Enter marks of student in Physics&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="sub1[x]" expression="input"/>
+                <output expression="&quot;Enter marks of student in Computer Science&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="sub2[x]" expression="input"/>
+                <output expression="&quot;Enter marks of student in Chemistry&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="sub3[x]" expression="input"/>
+                <output expression="&quot;Enter marks of student in Mathematics&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="sub4[x]" expression="input"/>
+                <output expression="&quot;Enter marks of student in english&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="sub5[x]" expression="input"/>
+                <assign variable="total[x]" expression="sub1[x]+sub2[x]+sub3[x]+sub4[x]+sub5[x]"/>
+                <assign variable="avg[x]" expression="total[x]/5"/>
+            </for>
+            <for variable="x" start="0" end="n-1" direction="inc" step="1">
+                <comment text="Evaluating the given datas and information from the user"/>
+                <output expression="&quot;Roll number of the student :&quot;&amp;roll[x]" newline="True"/>
+                <output expression="&quot;Marks of the student :&quot;&amp;sub1[x]&amp;&quot;, &quot;&amp;sub2[x]&amp;&quot;, &quot;&amp;sub3[x]&amp;&quot;, &quot;&amp;sub4[x]&amp;&quot;, &quot;&amp;sub5[x]" newline="True"/>
+                <output expression="&quot;total marks of the student :&quot;&amp;total[x]" newline="True"/>
+                <output expression="&quot;Average marks of the student :&quot;&amp;avg[x]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

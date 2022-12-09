@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chennavaram arnav"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:07:15 AM"/>
+        <attribute name="created" value="Y2hlbm5hdmFyYW0gYXJuYXY7QVJOQVZST0ctQ0xTMlFPOzIwMjItMTItMDk7MTA6MjE6MDEgQU07NDA2NQ=="/>
+        <attribute name="edited" value="Y2hlbm5hdmFyYW0gYXJuYXY7QVJOQVZST0ctQ0xTMlFPOzIwMjItMTItMDk7MTA6MzU6MTIgQU07MTs0MTgw"/>
+        <attribute name="edited" value="cmF0aG47UkRFTEw7MjAyMi0xMi0wOTsxMTowNzoxNSBBTTsyOzIyODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variables"/>
+            <declare name="array" type="Integer" array="True" size="5"/>
+            <declare name="input, max, x" type="Integer" array="False" size=""/>
+            <for variable="x" start="0" end="4" direction="inc" step="1">
+                <comment text="Evaluating the given data or values"/>
+                <output expression="&quot;Enter &quot;&amp;x+1&amp;&quot; value&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="array[x]" expression="input"/>
+            </for>
+            <assign variable="max" expression="array[0]"/>
+            <for variable="x" start="0" end="4" direction="inc" step="1">
+                <if expression="array[x]&gt;max">
+                    <then>
+                        <assign variable="max" expression="array[x]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The largest integer value in array is &quot;&amp;max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

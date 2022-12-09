@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rathn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:04:32 AM"/>
+        <attribute name="created" value="cmF0aG47UkRFTEw7MjAyMi0xMi0wOTswOTozMjowMSBBTTsyMTc0"/>
+        <attribute name="edited" value="cmF0aG47UkRFTEw7MjAyMi0xMi0wOTsxMTowNDozMiBBTTszOzIyODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring variables "/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="Values" type="Integer" array="True" size="10"/>
+            <comment text="Collecting datas and information from the user"/>
+            <output expression="&quot;Enter array 1&quot;" newline="True"/>
+            <input variable="Values[0]"/>
+            <output expression="&quot;Enter array 2&quot;" newline="True"/>
+            <input variable="Values[1]"/>
+            <output expression="&quot;Enter array 3&quot;" newline="True"/>
+            <input variable="Values[2]"/>
+            <output expression="&quot;Enter array 4&quot;" newline="True"/>
+            <input variable="Values[3]"/>
+            <output expression="&quot;Enter array 5&quot;" newline="True"/>
+            <input variable="Values[4]"/>
+            <output expression="&quot;Enter array 6&quot;" newline="True"/>
+            <input variable="Values[5]"/>
+            <output expression="&quot;Enter array 7&quot;" newline="True"/>
+            <input variable="Values[6]"/>
+            <output expression="&quot;Enter array 8&quot;" newline="True"/>
+            <input variable="Values[7]"/>
+            <output expression="&quot;Enter array 9&quot;" newline="True"/>
+            <input variable="Values[8]"/>
+            <output expression="&quot;Enter array 10&quot;" newline="True"/>
+            <input variable="Values[9]"/>
+            <assign variable="x" expression="0"/>
+            <comment text="Evaluating the given datas and information"/>
+            <for variable="x" start="0" end="9" direction="inc" step="1">
+                <output expression="Values[x]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
