@@ -1,0 +1,158 @@
+\documentclass[9pt]{beamer}
+\mode<presentation>    
+
+% Author: Ramaguru Radhakrishnan
+% Creation Date: 24th Feb 2023
+% Description: Amrita TIFAC-CORE Beamer Template
+% Courtesy: MSU Beamer Template
+
+% Theme choice:
+\usetheme{Madrid} %Darmsta dt %Madrid
+
+\usecolortheme[RGB={140,4,54}]{structure}
+ \usefonttheme{structurebold} 
+\setbeamercovered{invisible}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage{dynblocks}
+\usepackage{textpos}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{dutchcal}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[affil-it]{authblk} 
+\usepackage{etoolbox}
+\usepackage{lmodern}
+
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{18}{19.2}\selectfont\@title}{}{}
+\makeatother
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+
+% Title page details: 
+\title[Assignment Title]{C PROGRAMMING LANGUAGE} %add title
+
+% Edit here - Begins
+\newcommand{\name}{Rathnesh R}
+\newcommand{\rnum}{CB.EN.U4CYS22053}
+\newcommand{\assignmentname}{C PROGRAMMING LANGUAGE}
+% Edit here - Ends
+
+%Dont Change anything here below
+\institute[TIFAC-CORE in Cyber Security]{\textbf{\large \assignmentname %add name 
+% \hspace{0.5pt}
+\\ \qquad
+\\Presented by \name 
+\\ \rnum 
+\\TIFAC-CORE in Cyber Security \\ Amrita Vishwa Vidyapeetham, Coimbatore Campus}
+} 
+% \titlegraphic{\includegraphics[width=5cm]{msu.eps}}
+\titlegraphic{
+\includegraphics[width=6.6cm]{reference_logos/Amrita_Vishwa_Vidyapeetham_Logo.png}
+\includegraphics[width=1.6cm]{reference_logos/Logo.png}}
+\date{Feb 24, 2023}
+
+% Logo only on title page
+%\logo{\includegraphics[width=1cm,keepaspectratio]{Logo.png}}
+\usepackage[pscoord]{eso-pic}
+
+\begin{document}
+
+% Title page frame
+%\begin{frame}
+    %\titlepage 
+%\end{frame}
+\frame[plain]{\titlepage}
+%logo
+\AddToShipoutPictureFG{
+    \put(\LenToUnit{.92\paperwidth},
+    \LenToUnit{.185\paperheight})
+    {\vtop{{\null}
+    \makebox{\includegraphics[width=.9cm,keepaspectratio]{reference_logos/Logo.png}}}}}
+
+% Table of Contents - Sections will come here
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+
+%% Edit only below this section
+\section{Section 1}
+
+\begin{frame}{Introduction}
+You may add your contents here. \newline This will go as newline. 
+\begin{itemize}
+    \item This is an example \textcolor{red}{itemized}
+    \item \textbf{This is another example to itemize which is in bold}
+\end{itemize} 
+\vspace{5px}
+Different styles can be followed. \newline 
+\begin{enumerate}
+    \item This is an example of enumeration
+    \item \textit{This is another example of enum in italics}
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Block Example}
+
+This slide shows the example for Blocks.
+\begin{block}{Definition}
+I am defining a TIFAC-CORE in Cyber Security Beamer Template
+\end{block}
+
+\end{frame}
+
+
+\section{Section 2}
+
+\begin{frame}{Test Image 1}
+
+This is an example citation for the figure. \ref{fig: demo1}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.50\textwidth]{reference_logos/Amrita_Vishwa_Vidyapeetham_Logo.png}
+    \caption{Demo Figure 2}
+    \label{fig: demo1}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Test Image 2}
+
+This is an example citation for the figure. \ref{fig: demo}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.50\textwidth]{reference_logos/Logo.png}
+    \caption{Demo Figure 1}
+    \label{fig: demo}
+\end{figure}
+
+\end{frame}
+
+
+\section{Section 3}
+
+\begin{frame}{Thank you}
+\centering
+\LARGE{\textbf{Thanks for using this.}} 
+\end{frame}
+
+\section{Bibliography}
+\begin{frame}{References}
+
+\bibitem{} Ramaguru, R., Sindhu, M., Sethumadhavan, M. (2019). Blockchain for the Internet of Vehicles. In: Singh, M., Gupta, P., Tyagi, V., Flusser, J., Ören, T., Kashyap, R. (eds) Advances in Computing and Data Sciences. ICACDS 2019. Communications in Computer and Information Science, vol 1045. Springer, Singapore. \url{https://doi.org/10.1007/978-981-13-9939-8\_37}
+
+\end{frame}
+
+\end{document}
